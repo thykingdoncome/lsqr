@@ -2,6 +2,10 @@
   "name": "lsqr",
   "version": "0.4.0",
   "private": true,
+  "engines": {
+    "npm": "6.14.8",
+    "node": "14.15.0"
+  },
   "scripts": {
     "tailwind:dev": "tailwindcss build src/assets/css/tailwind.css -o src/assets/css/tailwind.output.css",
     "tailwind:build": "cross-env NODE_ENV=production postcss src/assets/css/tailwind.css -o src/assets/css/tailwind.output.css",
