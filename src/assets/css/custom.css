@@ -1,0 +1,147 @@
+main, .container {
+    color: #213F7D !important;
+}
+
+aside {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+aside::-webkit-scrollbar {
+    display: none;
+}
+
+.fixed-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.main-wrapper, .sidebar-wrapper {
+    margin-top: 50px;
+}
+
+.text-size-md {
+    font-size: .99rem;
+}
+
+.text-purple-600 {
+    color: rgb(57, 205, 204) !important;
+}
+
+.bg-purple-600 {
+    background: rgb(57, 205, 204) !important;
+}
+
+.text-size-sm {
+    font-size: .75rem;
+}
+
+.pri-col-1 {
+    background-color: #39CDCC;
+    opacity: 1;
+}
+
+.pri-col-text {
+    color: rgba(33, 63, 125, 1) !important;
+}
+
+.pri-col-text-light {
+    color: rgba(33, 63, 125, 0.6);
+}
+
+.pri-col-text-md {
+    color: #545F7D;
+}
+
+/* INFO CARD */
+.info-card {
+    padding: 1.5rem;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    transition: .4s;
+}
+
+.info-card:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* End */
+
+/* TABLE CUSTOM */
+.table-container {
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+thead {
+    background-color: white !important;
+    border-bottom: none !important;
+}
+
+tr {
+   line-height: 2rem !important;
+}
+
+.bar-active-bg {
+    background-color: rgba(57, 205, 204, 0.06);
+}
+/* END */
+
+#user-acttion-buttons button:nth-of-type(1) {
+    border: 1px solid #E4033B;
+    color: #E4033B;
+}
+
+#user-acttion-buttons button:nth-of-type(1):hover {
+    border: 1px solid rgb(90, 73, 73);
+}
+
+#user-acttion-buttons button:nth-of-type(2) {
+    border: 1px solid #39CDCC;
+    color: #39CDCC;
+}
+
+#user-acttion-buttons button:nth-of-type(2):hover {
+    border: 1px solid rgb(90, 73, 73);
+}
+
+/* USER DETAILS TAB */
+.user-details-header {
+    background: white;
+    padding: 2rem;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.ant-tabs-nav {
+    background: white;
+    padding: 0 2rem;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+
+}
+
+.ant-tabs-nav-list {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.ant-tabs-content-holder {
+    background: white;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 4px;
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.details-section {
+    border-bottom: 1px soild red !important;
+}
+
+.onboarding-wrapper {
+    min-height: 100vh;
+}
