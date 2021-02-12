@@ -26,13 +26,13 @@ aside::-webkit-scrollbar {
     font-size: .99rem;
 }
 
-.text-purple-600 {
+/* .text-purple-600 {
     color: rgb(57, 205, 204) !important;
 }
 
 .bg-purple-600 {
     background: rgb(57, 205, 204) !important;
-}
+} */
 
 .text-size-sm {
     font-size: .75rem;
