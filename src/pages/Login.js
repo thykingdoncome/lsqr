@@ -76,7 +76,7 @@ function Login() {
               FORGOT PASSWORD?
             </Link>
           </p>
-            <Button className="mt-4 py-3 w-full text-white hover:text-white h-12 font-bold rounded-sm" block tag={Link} to="/app">
+            <Button className="mt-4 py-3 w-full bg-secondary text-white hover:text-white hover:bg-secondary h-12 font-bold rounded-sm" block tag={Link} to="/app">
               Log in
             </Button>
           </form>

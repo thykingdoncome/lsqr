@@ -29,7 +29,7 @@ function Header() {
 
   return (
     <header className="z-40 py-4 bg-white shadow-bottom dark:bg-gray-800 fixed-item">
-      <div className="flex items-center justify-between h-full px-6 mx-auto text-purple-600 dark:text-purple-300">
+      <div className="flex items-center justify-between h-full px-6 mx-auto text-primary">
         {/* <!-- Mobile hamburger --> */}
         <button
           className="p-1 mr-5 -ml-1 rounded-md lg:hidden focus:outline-none focus:shadow-outline-purple"
@@ -38,19 +38,19 @@ function Header() {
         >
           <MenuIcon className="w-6 h-6" aria-hidden="true" />
         </button>
-        {/* <!-- Search input --> */}
-        <div className="flex items-center justify-between flex-1 lg:mr-32 ">
+
+        <div className="flex items-center justify-between flex-1 lg:mr-32" style={{maxWidth: '700px'}}>
           <a className="text-lg mr-6" href="/app/dashboard">
             <img src={Logo} alt="Lendsqr"/>
           </a>
-          <div className="relative w-full max-w-xl mr-6 focus-within:text-purple-500"  style={{borderRadius: '8px 0 0 8px'}}>
+          {/* <!-- Search input --> */}
+          <div className="relative max-w-sm w-full focus-within:text-purple-500 rounded-md">
             <Input
-              style={{borderRadius: '8px 0 0 8px'}}
-              className="pl-8 text-gray-700"
+              className="pl-8 text-gray-700 rounded-l-md "
               placeholder="Search for anything"
               aria-label="Search"
             />
-            <div className="absolute right-0 inset-y-0 flex items-center px-4" style={{background: '#39CDCC', borderRadius: '0 8px 8px 0', outline: '0'}}>
+            <div className="absolute right-0 inset-y-0 bg-secondary rounded-r-md flex items-center px-4">
               <SearchIcon className="w-4 h-4 text-white" aria-hidden="true" />
             </div>
           </div>
@@ -64,7 +64,7 @@ function Header() {
               aria-label="Notifications"
               aria-haspopup="true"
             >
-              <BellIcon className="w-5 h-5" aria-hidden="true" />
+              <BellIcon className="w-5 h-5 text-primary" aria-hidden="true" />
               {/* <!-- Notification badge --> */}
               <span
                 aria-hidden="true"
@@ -77,11 +77,11 @@ function Header() {
               isOpen={isNotificationsMenuOpen}
               onClose={() => setIsNotificationsMenuOpen(false)}
             >
-              <DropdownItem tag="a" href="#" className="justify-between">
+              <DropdownItem tag="a" href="#" className="justify-between text-secondary">
                 <span>Messages</span>
                 <Badge type="danger">13</Badge>
               </DropdownItem>
-              <DropdownItem tag="a" href="#" className="justify-between">
+              <DropdownItem tag="a" href="#" className="justify-between text-secondary">
                 <span>Sales</span>
                 <Badge type="danger">2</Badge>
               </DropdownItem>
@@ -99,7 +99,7 @@ function Header() {
                 aria-hidden="true"
             />
             <button
-              className="flex items-center focus:outline-none"
+              className="flex items-center focus:outline-none  text-primary"
               onClick={handleProfileClick}
               aria-label="Account"
               aria-haspopup="true"
@@ -111,11 +111,11 @@ function Header() {
               isOpen={isProfileMenuOpen}
               onClose={() => setIsProfileMenuOpen(false)}
             >
-              <DropdownItem tag="a" href="#">
+              <DropdownItem tag="a" href="#" className="text-secondary">
                 <OutlinePersonIcon className="w-4 h-4 mr-3" aria-hidden="true" />
                 <span>Profile</span>
               </DropdownItem>
-              <DropdownItem tag="a" href="#">
+              <DropdownItem tag="a" href="#" className="text-secondary">
                 <OutlineCogIcon className="w-4 h-4 mr-3" aria-hidden="true" />
                 <span>Settings</span>
               </DropdownItem>

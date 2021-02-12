@@ -20,13 +20,13 @@ function SidebarContent() {
             <NavLink
               exact
               to={route.path}
-              className="inline-flex items-center w-full text-size-md pri-col-text-light font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 mt-2"
-              activeClassName="pri-col-text dark:text-gray-100 bar-active-bg"
+              className="inline-flex items-center w-full text-size-md  font-semibold transition-colors duration-150 hover:text-gray-800 mt-2"
+              activeClassName="text-primary"
             >
-            <li className="relative px-6 py-2 flex" style={{width: '100%'}} key={route.name}>
+            <li className="relative px-6 py-2 flex w-full" key={route.name}>
               <Route path={route.path} exact={route.exact}>
                 <span
-                  className="absolute inset-y-0 left-0 w-1 pri-col-1 rounded-tr-lg rounded-br-lg"
+                  className="absolute inset-y-0 left-0 w-1 bg-secondary rounded-tr-lg rounded-br-lg"
                   aria-hidden="true"
                 ></span>
               </Route>
@@ -46,7 +46,7 @@ function SidebarContent() {
             <NavLink
               exact
               to={route.path}
-              className="inline-flex items-center w-full text-size-md pri-col-text-light font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 mt-2"
+              className="inline-flex items-center w-full text-size-md pri-col-text-light font-semibold transition-colors duration-150 hover:text-gray-800 mt-2"
               activeClassName="pri-col-text dark:text-gray-100 bar-active-bg"
             >
             <li className="relative px-6 py-2 flex" style={{width: '100%'}} key={route.name}>
@@ -73,7 +73,7 @@ function SidebarContent() {
             <NavLink
               exact
               to={route.path}
-              className="inline-flex items-center w-full text-size-md pri-col-text-light font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 mt-2"
+              className="inline-flex items-center w-full text-size-md pri-col-text-light font-semibold transition-colors duration-150 hover:text-gray-800 mt-2"
               activeClassName="pri-col-text dark:text-gray-100 bar-active-bg"
             >
               <li className="relative px-6 py-2 flex" style={{width: '100%'}} key={route.name}>
@@ -100,7 +100,7 @@ function SidebarContent() {
             <NavLink
               exact
               to={route.path}
-              className="inline-flex items-center w-full text-size-md pri-col-text-light font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 mt-2"
+              className="inline-flex items-center w-full text-size-md pri-col-text-light font-semibold transition-colors duration-150 hover:text-gray-800 mt-2"
               activeClassName="pri-col-text dark:text-gray-100 bar-active-bg"
             >
             <li className="relative px-6 py-2 flex" style={{width: '100%'}} key={route.name}>
@@ -127,7 +127,7 @@ function SidebarContent() {
             <NavLink
               exact
               to={route.path}
-              className="inline-flex items-center w-full text-size-md pri-col-text-light font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 mt-2"
+              className="inline-flex items-center w-full text-size-md pri-col-text-light font-semibold transition-colors duration-150 hover:text-gray-800 mt-2"
               activeClassName="pri-col-text dark:text-gray-100 bar-active-bg"
             >
             <li className="relative px-6 py-2 flex" style={{width: '100%'}} key={route.name}>
