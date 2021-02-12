@@ -145,3 +145,13 @@ tr {
 .onboarding-wrapper {
     min-height: 100vh;
 }
+
+.mobile-logo {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .mobile-logo {
+        display: block;
+    }
+}

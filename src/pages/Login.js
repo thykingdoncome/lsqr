@@ -9,15 +9,14 @@ import { Label, Input, Button } from "@windmill/react-ui";
 function Login() {
   return (
     <div
-      className="flex flex-col overflow-y-auto md:flex-row onboarding-wrapper p-8
+      className="flex flex-col overflow-y-auto md:flex-row onboarding-wrapper px-8
      h-screen items-center
     "
-    style={{background: 'rgba(229, 229, 229, 0.3)'}}
     >
-      <div className="hidden lg:block w-full md:w-1/2 xl:w-1/2 h-screen md:h-auto items-center justify-center">
-        <div className="flex flex-col justify-center items-center">
-          <div>
-            <div className="mb-20">
+      <div className="hidden h-full lg:flex w-full md:w-1/2 xl:w-1/2 md:h-full items-center justify-center ">
+        <div className="flex justify-center items-center h-full">
+          <div className='h-full flex flex-col justify-center'>
+            <div className="mb-40">
               <img aria-hidden="true" src={Logo} alt="Office" />
             </div>
 
@@ -28,10 +27,15 @@ function Login() {
         </div>
       </div>
 
-      <main className="w-full md:max-w-md lg:max-w-full md:mx-auto md:w-1/2 xl:w-1/2 h-screen px-6 lg:px-16 xl:px-12
-      flex items-center justify-center"
+      <main className="w-full md:max-w-md lg:max-w-full md:mx-auto md:w-1/2 xl:w-1/2 px-6 lg:px-16 xl:px-12
+      flex justify-center flex-col h-full py-4"
       >
-        <div className='w-4/5'>
+        <div style={{ width: '447px' }} className='mx-auto'>
+
+          <div className="mobile-logo mb-20 w-full">
+              <img aria-hidden="true" src={Logo} alt="Office" />
+          </div>
+
           <h1
             className="mb-4 font-semibold"
             style={{ fontSize: "3rem", color: '#213F7D' }}
@@ -46,7 +50,7 @@ function Login() {
             <div>
               <Label>
                 <Input
-                  className="mt-1 py-3 w-full"
+                  className="mt-1 py-3 w-full h-12"
                   type="email"
                   placeholder="Email"
                   required
@@ -57,7 +61,7 @@ function Login() {
             <div class="mt-8">
               <Label className="">
                 <Input
-                  className="w-full py-3"
+                  className="w-full py-3 h-12"
                   type="password"
                   placeholder="Password"
                   required
@@ -66,13 +70,13 @@ function Login() {
             </div>
             <p className="mt-4">
             <Link
-              className="text-sm font-medium text-purple-600 dark:text-purple-400 hover:underline"
+              className="text-sm font-medium text-purple-600 hover:underline"
               to="/"
             >
               FORGOT PASSWORD?
             </Link>
           </p>
-            <Button className="mt-4 py-3 w-full" block tag={Link} to="/app">
+            <Button className="mt-4 py-3 w-full text-white hover:text-white h-12 font-bold rounded-sm" block tag={Link} to="/app">
               Log in
             </Button>
           </form>
