@@ -12,7 +12,7 @@ function RoundIcon({
   const cls = classNames(baseStyle, iconColorClass, bgColorClass, className)
   return (
     <div className={cls} style={{width: 'fit-content'}}>
-      <Icon className="w-5 h-5" />
+      <Icon className="w-10 h-10" />
     </div>
   )
 }

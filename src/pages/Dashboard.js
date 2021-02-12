@@ -12,6 +12,8 @@ import {
   TableCell,
   TableRow
 } from '@windmill/react-ui'
+import { formatDate } from '../utils/funcs/FormatDate'
+import { formatAmount } from '../utils/funcs/FormatAmount'
 
 
 function Dashboard() {
@@ -44,7 +46,7 @@ function Dashboard() {
     {
       name: 'Liberty Credi',
       numberOfUsers: 1000,
-      numberOfLoans: 2309
+      numberOfLoans: 990
     },
     {
       name: 'Liberty Credi',
@@ -64,7 +66,7 @@ function Dashboard() {
 
       {/* <!-- Cards --> */}
       <div className="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
-        <InfoCard title="USERS" value="6,389">
+        <InfoCard title="ORGANIZATIONS" value={formatAmount(10089)}>
           <RoundIcon
             icon={PeopleIcon}
             iconColorClass="text-orange-500 dark:text-orange-100"
@@ -73,7 +75,7 @@ function Dashboard() {
           />
         </InfoCard>
 
-        <InfoCard title="ACTIVE USERS" value="5,089">
+        <InfoCard title="USERS" value={formatAmount(5089)}>
           <RoundIcon
             icon={MoneyIcon}
             iconColorClass="text-green-500 dark:text-green-100"
@@ -82,7 +84,7 @@ function Dashboard() {
           />
         </InfoCard>
 
-        <InfoCard title="USERS WITH LOANS" value="3,766">
+        <InfoCard title="LOANS" value={`₦ ${formatAmount(50089)}`} count={formatAmount(309)}>
           <RoundIcon
             icon={CartIcon}
             iconColorClass="text-blue-500 dark:text-blue-100"
@@ -91,7 +93,7 @@ function Dashboard() {
           />
         </InfoCard>
 
-        <InfoCard title="USERS WITH SAVINGS" value="5,005">
+        <InfoCard title="SAVINGS" value={`₦ ${formatAmount(1000089)}`} count={formatAmount(309)}>
           <RoundIcon
             icon={ChatIcon}
             iconColorClass="text-teal-500 dark:text-teal-100"
@@ -104,29 +106,29 @@ function Dashboard() {
       <div className="grid gap-6 mb-8 md:grid-cols-2">
 
         <TableContainer className='bg-white p-8 table-container'>
-          <div className='flex justify-between p-4 bg-white'>
-            <h1>Recent Logins</h1>
-            <Link to='#' style={{textDecoration: 'underline'}}>view more</Link>
+          <div className='flex justify-between p-4 bg-white text-primary'>
+            <h1 className='text-primary text-base font-semibold'>Recent Logins</h1>
+            <Link to='#' className='underline text-pale-purple'>view more</Link>
           </div>
           <Table>
-            <TableHeader>
-              <tr>
+            <TableHeader className='text-pale-purple font-semibold text-xs'>
+              <tr className='text-pale-purple font-semibold text-xs'>
                 <TableCell>USERS</TableCell>
                 <TableCell>DATE/TIME</TableCell>
               </tr>
             </TableHeader>
-            <TableBody>
+            <TableBody className='text-pale-purple text-sm'>
               {recentLogin.map((user, i) => (
                 <TableRow key={i}>
                   <TableCell>
-                    <div className="flex items-center text-sm">
+                    <div className="flex items-center">
                       <div>
-                        <p className="font-semibold">{user.name}</p>
+                        <p>{user.name}</p>
                       </div>
                     </div>
                   </TableCell>
                   <TableCell>
-                    <span className="text-sm">{new Date(user.date).toLocaleDateString()}</span>
+                    <span>{formatDate(user.date)}</span>
                   </TableCell>
                 </TableRow>
               ))}
@@ -137,32 +139,32 @@ function Dashboard() {
 
         <TableContainer className='bg-white p-8 table-container'>
           <div className='flex justify-between p-4 bg-white table-super-header'>
-            <h1>Organizations</h1>
-            <Link to='#' style={{textDecoration: 'underline'}}>view more</Link>
+            <h1 className='text-primary text-base font-semibold'>Organizations</h1>
+            <Link to='#' className='underline text-pale-purple'>view more</Link>
           </div>
           <Table>
             <TableHeader>
-              <tr>
+              <tr className='text-pale-purple font-semibold text-xs'>
                 <TableCell>ORGANIZATIONS</TableCell>
                 <TableCell>NUMBER OF USERS</TableCell>
                 <TableCell>NUMBER OF LOANS</TableCell>
               </tr>
             </TableHeader>
-            <TableBody>
+            <TableBody className='text-pale-purple text-sm'>
               {organizationsData.map((user, i) => (
                 <TableRow key={i}>
                   <TableCell>
-                    <div className="flex items-center text-sm">
+                    <div className="flex items-center">
                       <div>
-                        <p className="font-semibold">{user.name}</p>
+                        <p className="">{user.name}</p>
                       </div>
                     </div>
                   </TableCell>
                   <TableCell>
-                    <p>{user.numberOfUsers}</p>
+                    <p>{formatAmount(user.numberOfUsers)}</p>
                   </TableCell>
                   <TableCell>
-                    <p>{user.numberOfLoans}</p>
+                    <p>{formatAmount(user.numberOfLoans)}</p>
                   </TableCell>
                 </TableRow>
               ))}
