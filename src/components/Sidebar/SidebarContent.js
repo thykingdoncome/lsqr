@@ -1,8 +1,10 @@
 import React from 'react'
 import * as routes from '../../routes/sidebar'
-import { NavLink, Route } from 'react-router-dom'
+import { NavLink, Route, Link } from 'react-router-dom'
 import * as Icons from '../../icons'
 import SidebarSubmenu from './SidebarSubmenu'
+
+import { Logout } from '../../icons/index'
 
 function Icon({ icon, ...props }) {
   const Icon = Icons[icon]
@@ -20,7 +22,7 @@ function SidebarContent() {
             <NavLink
               exact
               to={route.path}
-              className="inline-flex items-center w-full text-size-md  font-semibold transition-colors duration-150 hover:text-gray-800 mt-2"
+              className="inline-flex items-center w-full text-base transition-colors duration-150 hover:text-gray-800 mt-2"
               activeClassName="text-primary"
             >
             <li className="relative px-6 py-2 flex w-full" key={route.name}>
@@ -46,7 +48,7 @@ function SidebarContent() {
             <NavLink
               exact
               to={route.path}
-              className="inline-flex items-center w-full text-size-md pri-col-text-light font-semibold transition-colors duration-150 hover:text-gray-800 mt-2"
+              className="inline-flex items-center w-full text-base pri-col-text-light transition-colors duration-150 hover:text-gray-800 mt-2"
               activeClassName="pri-col-text dark:text-gray-100 bar-active-bg"
             >
             <li className="relative px-6 py-2 flex" style={{width: '100%'}} key={route.name}>
@@ -65,7 +67,7 @@ function SidebarContent() {
       </ul>
 
       <ul className="mt-6">
-        <span className="relative px-6 py-3 text-size-sm pri-col-text-md">CUSTOMERS</span>
+        <span className="relative px-6 py-4 mb-4 text-xs pri-col-text-md">CUSTOMERS</span>
         {routes.SidebarCustomersData.map((route) =>
           route.routes ? (
             <SidebarSubmenu route={route} key={route.name} />
@@ -73,7 +75,7 @@ function SidebarContent() {
             <NavLink
               exact
               to={route.path}
-              className="inline-flex items-center w-full text-size-md pri-col-text-light font-semibold transition-colors duration-150 hover:text-gray-800 mt-2"
+              className="inline-flex items-center w-full text-base pri-col-text-light transition-colors duration-150 hover:text-gray-800 mt-2"
               activeClassName="pri-col-text dark:text-gray-100 bar-active-bg"
             >
               <li className="relative px-6 py-2 flex" style={{width: '100%'}} key={route.name}>
@@ -92,7 +94,7 @@ function SidebarContent() {
       </ul>
 
       <ul className="mt-6">
-      <span className="relative px-6 py-3 text-size-sm pri-col-text-md">BUSINESSES</span>
+      <span className="relative px-6 py-4 text-xs pri-col-text-md">BUSINESSES</span>
         {routes.SidebarBusinessesData.map((route) =>
           route.routes ? (
             <SidebarSubmenu route={route} key={route.name} />
@@ -100,7 +102,7 @@ function SidebarContent() {
             <NavLink
               exact
               to={route.path}
-              className="inline-flex items-center w-full text-size-md pri-col-text-light font-semibold transition-colors duration-150 hover:text-gray-800 mt-2"
+              className="inline-flex items-center w-full text-base pri-col-text-light transition-colors duration-150 hover:text-gray-800 mt-2"
               activeClassName="pri-col-text dark:text-gray-100 bar-active-bg"
             >
             <li className="relative px-6 py-2 flex" style={{width: '100%'}} key={route.name}>
@@ -119,7 +121,7 @@ function SidebarContent() {
       </ul>
 
       <ul className="mt-6">
-      <span className="relative px-6 py-3 text-size-sm pri-col-text-md">SETTINGS</span>
+      <span className="relative px-6 py-4 text-xs pri-col-text-md">SETTINGS</span>
         {routes.SidebarSettingsData.map((route) =>
           route.routes ? (
             <SidebarSubmenu route={route} key={route.name} />
@@ -127,7 +129,7 @@ function SidebarContent() {
             <NavLink
               exact
               to={route.path}
-              className="inline-flex items-center w-full text-size-md pri-col-text-light font-semibold transition-colors duration-150 hover:text-gray-800 mt-2"
+              className="inline-flex items-center w-full text-base pri-col-text-light transition-colors duration-150 hover:text-gray-800 mt-2"
               activeClassName="pri-col-text dark:text-gray-100 bar-active-bg"
             >
             <li className="relative px-6 py-2 flex" style={{width: '100%'}} key={route.name}>
@@ -143,6 +145,18 @@ function SidebarContent() {
           </NavLink>
           )
         )}
+      </ul>
+
+      <ul className="mt-16 pt-8 border-t-2 border-gray-200">
+        <Link to='/' className='mb-8'>
+          <li className='flex items-center px-6 text-primary text-base'>
+            <Logout /> <span className='ml-4'>Logout</span>
+          </li>
+        </Link>
+
+        <div className='mt-6'>
+          <span className='mt-6 px-6 text-primary text-xs'>v1.2.0</span>
+        </div>
       </ul>
     </div>
   )

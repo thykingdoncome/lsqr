@@ -27,7 +27,43 @@ import { ReactComponent as OutlinePersonIcon } from './outlinePerson.svg'
 import { ReactComponent as OutlineCogIcon } from './outlineCog.svg'
 import { ReactComponent as OutlineLogoutIcon } from './outlineLogout.svg'
 
+import { ReactComponent as SuitcaseIcon } from './suitCase.svg'
+import { ReactComponent as LoansIcon } from './loans.svg'
+import { ReactComponent as CoinsIcon } from './coins.svg'
+import { ReactComponent as RequestIcon } from './request.svg'
+import { ReactComponent as CheckUserIcon } from './checkUser.svg'
+import { ReactComponent as CancelUser } from './cancelUser.svg'
+import { ReactComponent as ProductsIcon } from './products.svg'
+import { ReactComponent as HousingIcon } from './housing.svg'
+import { ReactComponent as TransactionIcon } from './transaction.svg'
+import { ReactComponent as ServiceIcon } from './service.svg'
+import { ReactComponent as ListIcon } from './list.svg'
+import { ReactComponent as ReportIcon } from './report.svg'
+import { ReactComponent as PreferenceIcon } from './preference.svg'
+import { ReactComponent as PercentIcon } from './percent.svg'
+import { ReactComponent as LogsIcon } from './logs.svg'
+import { ReactComponent as MessageSettings } from './messageSettings.svg'
+import { ReactComponent as Logout } from './logout.svg'
+
+
 export {
+  Logout,
+  CoinsIcon,
+  LoansIcon,
+  SuitcaseIcon,
+  RequestIcon,
+  CheckUserIcon,
+  CancelUser,
+  TransactionIcon,
+  HousingIcon,
+  ProductsIcon,
+  ServiceIcon,
+  ListIcon,
+  ReportIcon,
+  PreferenceIcon,
+  PercentIcon,
+  MessageSettings,
+  LogsIcon,
   ButtonsIcon,
   CardsIcon,
   ChartsIcon,

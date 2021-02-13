@@ -4,8 +4,8 @@ function Detail({ title, detail }) {
 
   return (
     <div >
-      <p>{title}</p>
-      <h2>{detail}</h2>
+      <p className='text-xs text-pale-purple'>{title}</p>
+      <h2 className='text-base text-pale-purple'>{detail}</h2>
     </div>
   )
 }

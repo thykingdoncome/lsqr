@@ -30,7 +30,18 @@ module.exports = windmill({
       'hot-red': '#F55F44',
       'active-green': '#39CD62',
       'pale-purple': '#545F7D'
-     })
+     }),
+      borderColor: theme => ({
+       ...theme('colors'),
+        DEFAULT: theme('colors.gray.300', 'currentColor'),
+        'primary': '#213F7D',
+        'secondary': '#39CDCC',
+        'simple': '#545F7D',
+        'star-yellow': '#E9B200',
+        'hot-red': '#F55F44',
+        'active-green': '#39CD62',
+        'pale-purple': '#545F7D'
+      })
     },
   },
 })
