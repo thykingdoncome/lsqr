@@ -40,7 +40,7 @@ function Header() {
         </button>
 
         <div className="flex items-center justify-between flex-1 lg:mr-32" style={{maxWidth: '700px'}}>
-          <a className="text-lg mr-6" href="/app/dashboard">
+          <a className="text-lg lsqr-logo mr-6" href="/app/dashboard">
             <img src={Logo} alt="Lendsqr"/>
           </a>
           {/* <!-- Search input --> */}

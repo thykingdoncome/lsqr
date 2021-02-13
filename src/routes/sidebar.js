@@ -7,7 +7,7 @@
  */
 
 const SidebarOrganizationData =  [{
-  icon: 'PagesIcon',
+  icon: 'SuitcaseIcon',
   name: 'Switch Organization',
   routes: [
     // submenu
@@ -17,7 +17,7 @@ const SidebarOrganizationData =  [{
     }
   ]
 }]
-
+ 
 const SidebarDashboardData = [
   {
     icon: 'PagesIcon',
@@ -31,37 +31,37 @@ const SidebarCustomersData = [
   {
       name: 'Users',
       path: '/app/users',
-      icon: 'HomeIcon'
+      icon: 'PeopleIcon'
   },
   {
       name: 'Guarantors',
       path: '/app/guarantors',
-      icon: 'HomeIcon'
+      icon: 'PeopleIcon'
   },
   {
       name: 'Loans',
       path: '/app/loans',
-      icon: 'HomeIcon'
+      icon: 'LoansIcon'
   },
   {
       name: 'Savings',
       path: '/app/savings',
-      icon: 'HomeIcon'
+      icon: 'CoinsIcon'
   },
   {
       name: 'Loan Requests',
       path: '/app/loan-requests',
-      icon: 'HomeIcon'
+      icon: 'RequestIcon'
   },
   {
       name: 'Whitelist',
       path: '/app/whitelist',
-      icon: 'HomeIcon'
+      icon: 'CheckUserIcon'
   },
   {
       name: 'Karma',
       path: '/app/karma',
-      icon: 'HomeIcon'
+      icon: 'CancelUser'
   }
 ]
 
@@ -69,37 +69,37 @@ const SidebarBusinessesData = [
   {
       name: 'Organization',
       path: '/app/organization',
-      icon: 'HomeIcon'
+      icon: 'SuitcaseIcon'
   },
   {
       name: 'Savings Products',
       path: '/app/savings-products',
-      icon: 'HomeIcon'
+      icon: 'ProductsIcon'
   },
   {
       name: 'Transactions',
       path: '/app/transactions',
-      icon: 'HomeIcon'
+      icon: 'TransactionIcon'
   },
   {
       name: 'Services',
       path: '/app/services',
-      icon: 'HomeIcon'
+      icon: 'ServiceIcon'
   },
   {
       name: 'Service Account',
       path: '/app/service-account',
-      icon: 'HomeIcon'
+      icon: 'ServiceIcon'
   },
   {
       name: 'Settlements',
       path: '/app/settlements',
-      icon: 'HomeIcon'
+      icon: 'ListIcon'
   },
   {
       name: 'Reports',
       path: '/app/reports',
-      icon: 'HomeIcon'
+      icon: 'ReportIcon'
   }
 ]
 
@@ -107,22 +107,22 @@ const SidebarSettingsData = [
   {
       name: 'Preferences',
       path: '/app/preferences',
-      icon: 'HomeIcon'
+      icon: 'PreferenceIcon'
   },
   {
       name: 'Fees and Pricing',
       path: '/app/fees-pricing',
-      icon: 'HomeIcon'
+      icon: 'PercentIcon'
   },
   {
       name: 'Audit Logs',
       path: '/app/audit-logs',
-      icon: 'HomeIcon'
+      icon: 'LogsIcon'
   },
   {
       name: 'Systems Messages',
       path: '/app/systems-messages',
-      icon: 'HomeIcon'
+      icon: 'MessageSettings'
   }
 ]
 

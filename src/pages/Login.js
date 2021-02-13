@@ -27,7 +27,7 @@ function Login() {
         </div>
       </div>
 
-      <main className="w-full md:max-w-md lg:max-w-full md:mx-auto md:w-1/2 xl:w-1/2 px-6 lg:px-16 xl:px-12
+      <main className="w-full md:max-w-md lg:max-w-full md:mx-auto md:w-1/2 xl:w-1/2
       flex justify-center flex-col h-full py-4"
       >
         <div style={{ width: '447px' }} className='mx-auto'>
@@ -80,7 +80,6 @@ function Login() {
               Log in
             </Button>
           </form>
-
 
         </div>
       </main>
