@@ -35,7 +35,7 @@ function UserProfile({ match, history }) {
           </button>
         </div>
       </div>
-      {/* w-9/12 */}
+
       <div className="mt-8">
         <div className="user-details-header w-full">
           <div className="table w-2/3 user-details-box">
@@ -84,7 +84,7 @@ function UserProfile({ match, history }) {
         </div>
 
         <div>
-          <Tabs className="pt-4" defaultActiveKey="1" onChange={callback}>
+          <Tabs defaultActiveKey="1" onChange={callback}>
             <TabPane className="text-base" tab="General Details" key="1">
               <div
                 className="details-section"
